@@ -3,6 +3,13 @@ import {useMovieStore} from "../store/movie"
 const store = useMovieStore()
 
 
+useHead({
+  title: "Nuxt Movie | Popular",
+  meta: [
+     {name: "description", content:"Nuxt About"}
+  ]
+})
+
   store.getPopular()
 
 </script>

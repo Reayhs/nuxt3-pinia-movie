@@ -7,6 +7,10 @@ console.log(data.value);
 
 <template>
   <div>
+    <Head>
+      <Title>Nuxt Movie| {{ data.title }}</Title>
+      <Meta name="description" :content="data.overview" />
+    </Head>
     <MovieDetails :data="data" />
   </div>
 </template>

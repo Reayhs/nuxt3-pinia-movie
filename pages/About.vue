@@ -1,3 +1,14 @@
+<script setup>
+useHead({
+  title: "Nuxt Movie | About",
+  meta: [
+     {name: "description", content:"Nuxt About"}
+  ]
+})
+
+</script>
+
+
 <template>
   <div class="flex flex-col gap-20 justify-center items-center h-[70vh]">
     <h1 class="text-7xl">About</h1>
