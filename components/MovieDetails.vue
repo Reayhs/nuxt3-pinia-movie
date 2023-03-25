@@ -1,6 +1,6 @@
 <template>
   <div class="p-3 rounded-md shodow-md h-full">
-    <div class="grid grid-cols-2 gap-10 items-center grid">
+    <div class="grid grid-cols-2 gap-10 items-center">
       <div class="p-7">
         <img
           :src="API_IMG + data.poster_path"
