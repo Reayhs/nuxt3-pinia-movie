@@ -15,7 +15,7 @@ useHead({
 </script>
 
 <template>
-    <div class="grid grid-cols-4 gap-5 justify-center items-center">
+    <div class="flex flex-wrap gap-5 justify-center items-center bla">
      <Popular v-for="movie in store.popular" :movie="movie"/>
     </div>
 </template>

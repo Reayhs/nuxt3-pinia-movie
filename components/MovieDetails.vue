@@ -1,6 +1,6 @@
 <template>
   <div class="p-3 rounded-md shodow-md h-full">
-    <div class="grid grid-cols-2 gap-10 items-center">
+    <div class="grid grid-cols-2 gap-10 items-center grid">
       <div class="p-7">
         <img
           :src="API_IMG + data.poster_path"
@@ -30,4 +30,12 @@ const { data } = defineProps(["data"]);
 let API_IMG = "https://image.tmdb.org/t/p/w500/";
 </script>
 
-<style scoped></style>
+<style scoped>
+@media screen and (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    gap: 0;
+  }
+}
+</style>
